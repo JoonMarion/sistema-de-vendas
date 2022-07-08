@@ -3,7 +3,7 @@ import uuid
 from django.db import models
 from django.forms import DecimalField
 
-class Produtos(models.Model):
+class Produto(models.Model):
     cod_produto = models.UUIDField(
         primary_key=True,
         default=uuid.uuid4,
