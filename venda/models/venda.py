@@ -13,5 +13,5 @@ class Vendas(models.Model):
         unique=True,
         blank=False
     )
-    cod_cliente = models.ForeignKey('cliente_models.Clientes', primary_key=True)
+    cod_cliente = models.ForeignKey('cliente_models.Clientes')
     data_venda = models.DateField('Data da venda', null=False, blank=False)
