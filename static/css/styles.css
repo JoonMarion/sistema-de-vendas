@@ -78,9 +78,7 @@ a {
 
 /* TAMANHO DO FORM DA DESCRIÇÃO DO PRODUTO*/
 #id_descricao_produto {
-    height: 28px;
-    width: 256px;
-    
+    height: 38px;
 }
 
 /* POP-UP DE SUCESSO NA INSERÇÃO*/

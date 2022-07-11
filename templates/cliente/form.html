@@ -1,13 +1,13 @@
 {% extends 'model/base.html' %}
 
-{% block title %}Adicionar Produto{% endblock %}
+{% block title %}Adicionar Cliente{% endblock %}
 
 {% block content %}
 <div class="fixed-top" id="result"></div>
 {% load static %}
 <div class="body-cards">
     <div class="card shadow">
-        {% url 'produtoform' as Add %}
+        {% url 'clienteform' as Add %}
         {% if request.path == Add %}
         <div class="col-8 mb-2 text-center">
             <h1>Adicionar</h1>
@@ -20,7 +20,7 @@
 
         <div class="text-left">
             <form name="form" id="form"
-                action="{% if db %}/produto_update/{{db.cod_produto}}/{% else %}/produto_create/{% endif %}"
+                action="{% if db %}/cliente_update/{{db.cod_cliente}}/{% else %}/cliente_create/{% endif %}"
                 method="post">
                 <div class="row m-4">
                     <div class="col">
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a href="/produto_lista" class="icon me-2">
+                    <a href="/cliente_lista" class="icon me-2">
                         <img src="{% static 'image/arrow.png' %}" title="Voltar" alt="Voltar">
                     </a>
                     <input type="image" class="icon" title="Salvar" value="Salvar" src="{% static 'image/save.png' %}">
